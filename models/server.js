@@ -7,8 +7,8 @@ class server{
     constructor(){
         this.app=express();
         this.port= process.env.PORT || 8087
-        this.productoPathPath='/api/producto'
-        this.poveedorPhatPath='/api/proveedores' 
+        this.productoPath='/api/producto'
+        this.poveedorPhat='/api/proveedor' 
         this.middlewares()
         this.routes()
         this.dbConectar()
