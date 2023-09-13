@@ -2,9 +2,9 @@ const { response } = require('express');
 const Proveedor = require('../models/proveedor'); // Cambiar el nombre del modelo si es diferente
 
 const getProveedor = async (req, res = response) => {
-    let mensaje = '';
+    let mensaje = ''
     try {
-        const proveedores = await Proveedor.find()
+        const proveedores = await proveedor.find()
         mensaje = proveedores.mensaje
     } catch (error) {
         mensaje = error
